@@ -1,6 +1,13 @@
-<%--<jsp:include page="partials/header.jsp"/>--%>
-<%@ include file="partials/header.jsp" %>
-
-<h1>Home Page</h1>
-
-<%@ include file="partials/footer.jsp" %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram REST API Service</title>
+</head>
+<body>
+<h1>Hello World!</h1>
+<h1>Hello World!</h1>
+<h1>Hello World!</h1>
+<h1>Hello World!</h1>
+</body>
+</html>
