@@ -2,6 +2,7 @@ package com.shiblesadik.instagram.routes;
 
 import com.shiblesadik.instagram.models.User;
 import com.shiblesadik.instagram.repository.UserRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -29,5 +30,11 @@ public class UserController {
     @GetMapping("/{userId}")
     public Optional<User> getSingleUser(@PathVariable String userId) {
         return repository.findById(userId);
+    }
+
+    @GetMapping("/delete/{userId}")
+    public String deleteUser(@PathVariable String userId) {
+        repository.deleteById(userId);
+        return "Successfully " + userId + " deleted";
     }
 }
