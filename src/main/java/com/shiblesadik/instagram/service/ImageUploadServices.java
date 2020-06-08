@@ -16,4 +16,8 @@ public class ImageUploadServices {
     public void uploadFileToDatabase(MultipartFile file) throws IOException {
         file.transferTo(new File("D:\\SpringBoot\\Instagram\\" + "newFile" + file.getOriginalFilename()));
     }
+
+    public void uploadFileToDatabaseTesting(MultipartFile file) throws IOException {
+        file.transferTo(new File("D:\\SpringBoot\\Instagram\\" + "newFile" + file.getOriginalFilename()));
+    }
 }
